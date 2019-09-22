@@ -10,3 +10,6 @@ li{
 .author{
     text-indent: 30px;
 }
+.quote{
+    font-style: italic;
+}
