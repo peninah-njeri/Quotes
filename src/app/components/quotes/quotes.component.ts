@@ -19,5 +19,13 @@ export class QuotesComponent implements OnInit {
   downvote(quote:Quote){
     quote.downvotes ++;
   }
+  delete(quote:Quote){
+    const index = this.quotes.findIndex(myQuote => {
+      return myQuote.body === quote.body;
+    })
+ 
+
+    this.quotes.splice(index,1);
+  }
 
 }

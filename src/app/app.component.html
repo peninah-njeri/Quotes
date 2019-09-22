@@ -2,7 +2,7 @@
     <form #form="ngForm" (ngSubmit)="submitForm(form.value)">
       <div class="form-group">
         <label for="quote">Quote</label>
-        <input ngModel type="text" class="form-control" name="quote" id="quote">
+        <textarea ngModel class="form-control" name="quote" id="quote" cols="30" rows="3"></textarea>
       </div>
       <div class="form-group">
         <label for="author">Author</label>
@@ -12,7 +12,7 @@
         <label for="publisher">Submitted By</label>
         <input ngModel type="text" class="form-control" name="publisher" id="publisher">
       </div>
-      <button class="btn btn-primary">Submit</button>
+      <button class="btn btn-primary">Add qoute</button>
     </form>
 
 
