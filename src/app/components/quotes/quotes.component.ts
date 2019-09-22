@@ -13,13 +13,7 @@ export class QuotesComponent implements OnInit {
   ngOnInit() {
   }
 
-  upvote(quote:Quote){
-    quote.upvotes ++;
-  }
-  downvote(quote:Quote){
-    quote.downvotes ++;
-  }
-  delete(quote:Quote){
+  onDelete(quote:Quote){
     const index = this.quotes.findIndex(myQuote => {
       return myQuote.body === quote.body;
     })

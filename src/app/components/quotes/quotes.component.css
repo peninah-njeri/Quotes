@@ -3,10 +3,6 @@ li{
     flex-direction: column;
     align-content: space-around;
 }
-.details{
-    display:flex;
-    justify-content: space-around;
-}
 .author{
     text-indent: 30px;
 }
