@@ -8,11 +8,12 @@ import { Quote } from './models/quote';
 })
 export class AppComponent {
   title = 'quotes';
-  quotes: Quote[];
+  quotes: Quote[] = [];
 
 
   submitForm(value){
-    console.log(value);
+    const quote = new Quote(value.body, value.author, value.publisher)
+    this.quotes.push(quote);
   }
 
 }
