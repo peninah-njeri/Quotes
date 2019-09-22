@@ -13,4 +13,11 @@ export class QuotesComponent implements OnInit {
   ngOnInit() {
   }
 
+  upvote(quote:Quote){
+    quote.upvotes ++;
+  }
+  downvote(quote:Quote){
+    quote.downvotes ++;
+  }
+
 }

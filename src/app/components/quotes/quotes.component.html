@@ -1,7 +1,17 @@
 <ul class="list-group">
     <li class="list-group-item" *ngFor="let quote of quotes">
         <div>{{quote.body}}</div>
-        <div>{{quote.author}}</div>
-        <div>{{quote.publisher}}</div>
+        <div class="author"> -  {{ quote.author}}</div>
+        <div class="details">
+            <div class="publisher"> Added by{{quote.publisher}}</div>
+            <div class="vote">
+                <button class="btn btn-secondary" (click)="upvote(quote)">Like</button>
+                <span class="mx-3">{{quote.upvotes}}</span>
+            </div>
+            <div class="vote">
+                <button class="btn btn-secondary" (click)="downvote(quote)">unlike</button>
+                <span class="mx-3">{{quote.downvotes}}</span>
+            </div>
+        </div>
     </li>
 </ul>
