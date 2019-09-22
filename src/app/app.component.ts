@@ -12,8 +12,9 @@ export class AppComponent {
 
 
   submitForm(value){
-    const quote = new Quote(value.body, value.author, value.publisher)
+    const quote = new Quote(value.quote, value.author, value.publisher)
     this.quotes.push(quote);
+    console.log(value)
   }
 
 }

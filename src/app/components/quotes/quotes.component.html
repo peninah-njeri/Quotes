@@ -1,1 +1,7 @@
-<p>quotes works!</p>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let quote of quotes">
+        <div>{{quote.body}}</div>
+        <div>{{quote.author}}</div>
+        <div>{{quote.publisher}}</div>
+    </li>
+</ul>

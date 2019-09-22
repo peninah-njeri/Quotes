@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Quote } from './../../models/quote';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-quotes',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
-
+  @Input() quotes: Quote[]
   constructor() { }
 
   ngOnInit() {
