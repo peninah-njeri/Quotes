@@ -1,16 +1,18 @@
 <div class="container">
-    <form>
-        <div class="form-group">
-          <label for="quote">Quote</label>
-          <input type="text" class="form-control" name="quote" id="quote">
-        </div>
-        <div class="form-group">
-          <label for="author">Author</label>
-          <input type="text" class="form-control" name="author" id="author">
-        </div>
-        <div class="form-group">
-          <label for="publisher">Submitted By</label>
-          <input type="text" class="form-control" name="publisher" id="publisher">
-        </div>
-      </form>
+    <form #form="ngForm" (ngSubmit)="submitForm(form.value)">
+      <div class="form-group">
+        <label for="quote">Quote</label>
+        <input ngModel type="text" class="form-control" name="quote" id="quote">
+      </div>
+      <div class="form-group">
+        <label for="author">Author</label>
+        <input ngModel type="text" class="form-control" name="author" id="author">
+      </div>
+      <div class="form-group">
+        <label for="publisher">Submitted By</label>
+        <input ngModel type="text" class="form-control" name="publisher" id="publisher">
+      </div>
+      <button class="btn btn-primary">Submit</button>
+    </form>
+      {{form.value | json }}
 </div>

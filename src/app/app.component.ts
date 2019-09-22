@@ -10,5 +10,9 @@ export class AppComponent {
   title = 'quotes';
   quotes: Quote[];
 
-  
+
+  submitForm(value){
+    console.log(value);
+  }
+
 }
