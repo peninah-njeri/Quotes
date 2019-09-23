@@ -1,3 +1,6 @@
+*{
+    background-color: gray;
+}
 li{
     display: flex;
     flex-direction: column;
