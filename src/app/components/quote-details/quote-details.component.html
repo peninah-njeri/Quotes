@@ -1,5 +1,9 @@
 <div class="details">
-    <div class="publisher"> Added by {{quote.publisher}}</div>
+    <div class="publisher"> Added by {{quote.publisher}}</div> 
+
+    <div class="Published"> Published {{quote.dateAgo|dateAgo}} </div>
+
+   
     <div class="vote">
         <button class="btn btn-secondary" (click)="upvote(quote)">Like</button>
         <span class="mx-3">{{quote.upvotes}}</span>
