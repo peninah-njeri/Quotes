@@ -1,27 +1,22 @@
 # Quotes
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This project was created by peninah njeri
+# Description
+This is an online app that has quotes which allows users to see quotes from different authors and also add new quotes.
+## BDD
+| Behavior  |      Input       |  Output
+|-------------|----------------|---------------|
+|The browser loads|User input details|A quote is added at the bottom.
+## Setup/Installation Requirements
+One requires an internet browser in order to view the website oneline.
+For anyone to practice with my Quote, you must clone or download the repository in the link below to your local machine, into your editor either in (code . or atom .) in order to practice.
+## Project live site
+Here is a live link for the project:
+"https://peninah-njeri.github.io/Quotes/"
+## Technologies Used
+* Angular
+* Bootstrap
+## Contact Information
+You can reach me via email on peninahgathuru@gmail.com
+### License
+This project is licensed under MIT licence
+Copyright (c) {2019}
